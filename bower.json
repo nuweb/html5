@@ -1,0 +1,9 @@
+{
+  "name": "cnid-client",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery" : "latest",
+    "bootstrap" : "latest",
+    "modernizr": "latest"
+  }
+}

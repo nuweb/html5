@@ -1,0 +1,22 @@
+{
+  "name": "html5-demos",
+  "version": "0.0.1",
+  "description": "html5 demos",
+  "repository": "git@github.com:nuweb/html5.git",
+  "main": "Gruntfile.js",
+  "private": false,
+  "dependencies": {
+    "express": "*",
+    "connect": "*"
+  },
+  "devDependencies": {},
+  "author": {
+    "name": "Chandra Sekhar Veera"
+  },
+  "contributors": [
+    {
+      "name": "Chandra Sekhar Veera"
+    }
+  ],
+  "license": "free/open-source"
+}
