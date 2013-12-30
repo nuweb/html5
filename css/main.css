@@ -153,6 +153,10 @@ body {
   width: 100%;
   color: #fff;
 }
+
+#right-nav {
+  display: none;
+}
 #nav .close-btn {
   display: none;
 }
@@ -215,12 +219,17 @@ body {
   text-align: center;
   white-space: nowrap;
 }
-#top .nav-btn {
+#top .left-nav-btn {
   position: absolute;
   top: 1.5em;
   left: 1.875em;
 }
 
+#top .right-nav-btn {
+  position: absolute;
+  top: 1.5em;
+  right: 1.875em; 
+}
 #main {
   background: #fff;
 }

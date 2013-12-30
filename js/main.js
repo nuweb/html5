@@ -1,8 +1,3 @@
-/*!
- *
- *  Copyright (c) David Bushell | http://dbushell.com/
- *
- */
 (function(window, document, undefined)
 {
 
@@ -48,7 +43,7 @@
 
     // normalize vendor prefixes
 
-    var doc = document.documentElement;
+    var doc = document.documentElement; //  root element of the html document
 
     var transform_prop = window.Modernizr.prefixed('transform'),
         transition_prop = window.Modernizr.prefixed('transition'),
@@ -63,7 +58,11 @@
             return props.hasOwnProperty(transition_prop) ? props[transition_prop] : false;
         })();
 
-    window.App = (function()
+    console.log('transform_prop: ' + transform_prop);
+    console.log('transition_prop: ' + transition_prop);
+    console.log('transition_end: ' + transition_end);
+    console.log(doc);
+    window.app = (function()
     {
 
         var _init = false, app = { };
@@ -75,8 +74,7 @@
             nav_class = 'js-nav';
 
 
-        app.init = function()
-        {
+        return function() {
             if (_init) {
                 return;
             }
@@ -145,12 +143,10 @@
 
         };
 
-        return app;
-
     })();
 
     if (window.addEventListener) {
-        window.addEventListener('DOMContentLoaded', window.App.init, false);
+        window.addEventListener('DOMContentLoaded', window.app, false);
     }
 
 })(window, window.document);
